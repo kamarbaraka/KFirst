@@ -73,6 +73,23 @@ class Loops {
             }
 
         }
+
+        /**
+         * Executes specific code based on the value of the trigger parameter using a when expression.
+         *
+         * @param trigger the string value representing the trigger condition
+         */
+        fun whenExpression(trigger: String) {
+
+            /*when expression example*/
+            when (trigger) {
+                "start" -> println("Starting...")
+                "stop" -> println("Stopping...")
+                "hello" -> println("HELLO!")
+                "bye" -> println("Bye...")
+                else -> println("Unknown trigger")
+            }
+        }
     }
 }
 
@@ -85,5 +102,5 @@ class Loops {
  */
 fun main() {
 
-    Loops.whileLoop()
+    Loops.whenExpression("you")
 }
