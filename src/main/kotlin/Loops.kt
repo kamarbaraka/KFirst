@@ -94,6 +94,47 @@ class Loops {
 }
 
 /**
+ * The `Range` class provides utility methods for working with ranges of numbers.
+ *
+ * @author <a href="https://github.com/kamarbaraka">samson baraka</a>.
+ */
+class Range{
+    /**
+     * The `Companion` class provides utility methods for working with ranges of numbers.
+     *
+     * @since 1.0
+     */
+    companion object{
+
+        /**
+         * Checks if the given [value] is within the specified range defined by [max] and [min] (inclusive).
+         *
+         * @param value the value to be checked
+         * @param max the upper bound of the range, defaults to [Int.MAX_VALUE]
+         * @param min the lower bound of the range, defaults to 0
+         */
+        fun within(value: Int, max: Int, min: Int= 0) =
+            if (value in min..max) println("$value is in the range") else println("$value is not in the range")
+
+        /**
+         * Prints the progression of numbers from [min] to [max] with a specified [step].
+         *
+         * @param max the maximum value in the progression
+         * @param min the minimum value in the progression, defaults to 0
+         * @param step the step between consecutive values in the progression, defaults to 1
+         * @param reversed indicates whether the progression should be printed in reversed order, defaults to false
+         */
+        fun progression(max: Int, min: Int = 0, step: Int = 1, reversed: Boolean = false) {
+
+            if (reversed)
+                    for (i: Int in max downTo min step step) println(i)
+                 else
+                    for (i: Int in min..max step step) println(i)
+        }
+    }
+}
+
+/**
  * The entry point of the program.
  *
  * This method calls the `whileLoop` method from the `Loops` class.
@@ -102,5 +143,5 @@ class Loops {
  */
 fun main() {
 
-    Loops.whenExpression("you")
+    Range.within(7, 10, 5)
 }
