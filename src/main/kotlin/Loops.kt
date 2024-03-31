@@ -32,7 +32,7 @@ class Loops {
          */
         fun forLoop() {
 
-            val fruits = listOf<String>("banana", "apple", "orange")
+            val fruits = listOf("banana", "apple", "orange")
             for (i: Int in fruits.indices) {
 
                 println("the ${i + 1}th fruit is ${fruits[i]}")
@@ -63,7 +63,7 @@ class Loops {
         fun whileLoop() {
 
             val names = listOf<String>("samson", "baraka", "kahindi")
-            var loop: Int = 0
+            var loop = 0
 
             while (loop < names.size) {
 

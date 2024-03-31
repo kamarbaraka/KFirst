@@ -11,3 +11,5 @@ M
 src/main/kotlin/MyFirstApp.kt,0\4\04bc60acba1a9c9304d919324faabf0196e7712b
 H
 src/main/kotlin/Loops.kt,c\2\c202fd80539550ca9148f7fd14d2d2989c50bbb4
+N
+src/main/kotlin/Collections.kt,9\a\9ade5d4683b12901df7aed19b13c40b02f114553
